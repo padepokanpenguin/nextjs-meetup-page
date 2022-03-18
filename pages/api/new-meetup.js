@@ -18,7 +18,7 @@ async function handler(req, res) {
 
 		client.close();
 
-		res.status(201).json.stringify({ meessage: "Meetup inserted!" });
+		res.status(201).json({ meessage: "Meetup inserted!" });
 	}
 }
 
