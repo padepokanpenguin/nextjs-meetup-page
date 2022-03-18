@@ -18,6 +18,18 @@ function HomePage(props) {
 	);
 }
 
+// export async function getServerSideProps(context) {
+
+// 	const req = context.req;
+// 	const res = context.res;
+
+// 	return {
+// 		props: {
+// 			meetups: DUMMY_MEETUP
+// 		},
+// 	};
+//  }
+
 export async function getStaticProps() {
 	const client = await MongoClient.connect(
 		`mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@cluster0.mceon.mongodb.net/meetups?retryWrites=true&w=majority`
