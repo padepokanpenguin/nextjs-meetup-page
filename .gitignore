@@ -21,6 +21,7 @@
 # Next build dir
 .next/
 node_modules
+.env
 ### SublimeText ###
 # Cache files for Sublime Text
 *.tmlanguage.cache
